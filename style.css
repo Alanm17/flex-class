@@ -1,7 +1,7 @@
 * {
   margin:0;
   padding:0;
-  
+  box-sizing: border-box;
   }
   
   body{
@@ -55,17 +55,19 @@
    list-style:none;
   }
   
-  .main-header{
+  .main-header {
     background-color: #f7f7f7;
-    padding: 20px 30px;
-    margin-bottom:40px;
-    /* height:80px; */
+    /* padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px; */
+    padding: 20px 40px;
   }
   .container{
-    width:1300px;
+    width:1200px;
     /* margin-left:auto;
     margin-right:auto; */
     margin:0 auto;
+    
   }
   .post-header{
     margin-bottom:40px;
@@ -144,16 +146,23 @@
   }
  .aside1
  {
-  /* margin-left: 5px; */
+  margin-left: 75px;
  }
-  nav a:link{
-    margin-right:30px;
-    display:inline-block;
-   
-  }
-  nav a:link:last-child{
-    margin-right:0;
-  }
+ 
+ nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+
+  display: block; */
+
+  margin-right: 30px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
   button{
    font-size:22px;
    padding:20px;
@@ -233,10 +242,18 @@
     background-color:yellow;
     clear:both; */
   }
+  .clearfix::after {
+    clear:both;
+    content:'';
+    display:block;
+   
+   }
 .main-header{
   display:flex;
   align-items:center;
   justify-content:space-between;
+  margin-bottom:60px;
+
   }
   .author-box{
     display:flex;
@@ -271,7 +288,7 @@
     display:flex;
     align-items:flex-start;
     margin-bottom:60px;
-    gap:30px;
+    gap:300%;
     
     
   }
